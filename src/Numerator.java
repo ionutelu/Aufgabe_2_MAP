@@ -50,4 +50,11 @@ public class Numerator {
         this.num = num;
     }
 
+    public int biggestNumber() {
+        return num[num.length - 1];
+    }
+
+    public int smallestNumber() {
+        return num[0];
+    }
 }
