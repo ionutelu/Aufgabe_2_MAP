@@ -57,4 +57,27 @@ public class Numerator {
     public int smallestNumber() {
         return num[0];
     }
+
+    public int biggestSum(int n) {
+        int biggest = 0;
+        int index = this.num.length - 1;
+        int counter = 1;
+        while (counter < n){
+            biggest += this.num[index--];
+            counter++;
+        }
+        return biggest;
+
+    }
+
+    public int smallestSum(int n) {
+        int smallest = 0;
+        int index = 0;
+        int counter = 1;
+        while (counter < n){
+            smallest += this.num[index++];
+            counter++;
+        }
+        return smallest;
+    }
 }
